@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: dashed rgb(43, 43, 43) 1px;
+
+}
+
+.row{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: white;
+   
+}
+
+#grid-changer {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    display: block;
+    border-radius: 10px;
+    
+}
