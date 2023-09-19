@@ -38,7 +38,7 @@ function changeColor(e) {
 function changeGrid(){
     const colNumber = +prompt('Type the number of columns', '');
     while(colNumber > 100){
-        +prompt('Type a number less than 100', '')
+        colNumber = +prompt('Type a number less than 100', '')
     }
     resetGrid(colNumber);
 }
