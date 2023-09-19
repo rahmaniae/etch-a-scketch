@@ -1,7 +1,6 @@
 function resetGrid(...args){
     const container = document.querySelector('#container');
     container.innerHTML = "";
-    console.log(args)
     if(args.length === 0){
     for(i = 1; i <= 16; i++) {
         container.innerHTML += `<div data-row="${i}" class="row"></div>`
@@ -36,7 +35,7 @@ function changeColor(e) {
 }
 
 function changeGrid(){
-    const colNumber = +prompt('Type the number of columns', '');
+    let colNumber = +prompt('Type the number of columns', '');
     while(colNumber > 100){
         colNumber = +prompt('Type a number less than 100', '')
     }
